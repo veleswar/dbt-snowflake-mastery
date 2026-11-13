@@ -1,0 +1,2 @@
+# dbt v2 - Snowflake data platform
+dbt==2.0.11

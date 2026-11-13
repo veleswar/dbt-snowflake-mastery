@@ -1,0 +1,17 @@
+# Python
+dbt_env/
+__pycache__/
+*.pyc
+
+# dbt generated
+**/target/
+**/dbt_packages/
+**/logs/
+
+# Secrets
+**/profiles.yml
+.env
+
+# OS / IDE
+.DS_Store
+.idea/

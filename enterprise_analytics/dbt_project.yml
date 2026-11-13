@@ -1,0 +1,38 @@
+name: enterprise_analytics
+
+profile: enterprise_analytics
+
+seed-paths:
+  - seeds
+
+model-paths:
+  - models
+
+macro-paths:
+  - macros
+
+snapshot-paths:
+  - snapshots
+
+test-paths:
+  - tests
+
+analysis-paths:
+  - analyses
+
+clean-targets:
+  - target
+  - dbt_packages
+
+models:
+  enterprise_analytics:
+    +static_analysis: strict
+
+    staging:
+      +materialized: view
+
+    intermediate:
+      +materialized: view
+
+    marts:
+      +materialized: table
